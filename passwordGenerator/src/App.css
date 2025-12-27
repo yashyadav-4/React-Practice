@@ -1,0 +1,107 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  /* background:linear-gradient(135deg,#0f172a,#000); */
+  background: linear-gradient(135deg , rgb(234, 111, 49) , rgb(154, 227, 51));
+}
+
+.container{
+  width:100%;
+  max-width:420px;
+  background:#1f2933;
+  border-radius:18px;
+  padding:24px;
+  box-shadow:2px 20px 40px rgba(0,0,0,.5);
+}
+
+.title{
+  text-align:center;
+  color:#fff;
+  font-size:1.6rem;
+  margin-bottom:20px;
+}
+
+.password-box{
+  display:flex;
+  background:#020617;
+  border-radius:12px;
+  overflow:hidden;
+  margin-bottom:20px;
+}
+
+.password-box input{
+  flex:1;
+  background:transparent;
+  border:none;
+  outline:none;
+  padding:14px;
+  color:#22c55e;
+  font-size:1.1rem;
+  font-family:monospace;
+}
+
+.password-box button{
+  border:none;
+  background:#2563eb;
+  color:#fff;
+  padding:0 18px;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.password-box button:hover{
+  background:#1d4ed8;
+}
+
+.password-box button:active{
+  transform:scale(.95);
+}
+
+.controls{
+  color:#d1d5db;
+  font-size:.9rem;
+}
+
+.control{
+  margin-bottom:14px;
+}
+
+.control-row{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:6px;
+}
+
+.length-value{
+  color:#fb923c;
+  font-weight:600;
+}
+
+input[type="range"]{
+  width:100%;
+  cursor:pointer;
+  accent-color:#fb923c;
+}
+
+.checkbox{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:10px;
+}
+
+.checkbox input{
+  width:16px;
+  height:16px;
+  cursor:pointer;
+  accent-color:#fb923c;
+}
